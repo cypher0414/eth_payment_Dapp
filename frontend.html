@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ethereum Payment DApp</title>
+</head>
+<body>
+  <h2>Payment DApp (Contract + Database)</h2>
+
+  <button onclick="connectWallet()">Connect Wallet</button>
+  <p id="wallet">Not connected</p>
+
+  <h3>Send Payment</h3>
+  <input id="to" placeholder="Receiver address">
+  <input id="amount" placeholder="Amount in ETH" type="number">
+  <button onclick="sendPayment()">Send Payment</button>
+  <p id="status"></p>
+
+  <h3>Transaction History</h3>
+  <ul id="history"></ul>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
